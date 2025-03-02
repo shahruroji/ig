@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /ig/pages/
+
+# Jika URL cocok dengan nama pengguna, arahkan ke profile.php dengan parameter username
+RewriteRule ^([a-zA-Z0-9_]+)$ profile.php?username=$1 [L,QSA]
+
+RewriteRule ^([a-zA-Z0-9_]+)$ home.php [L,QSA]
+RewriteRule ^([a-zA-Z0-9_]+)$ profil.php [L,QSA]
+RewriteRule ^([a-zA-Z0-9_]+)$ notif.php [L,QSA]
+RewriteRule ^([a-zA-Z0-9_]+)$ bookmark.php [L,QSA]

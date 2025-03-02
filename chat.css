@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+}
+.chat-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    text-align: center;
+    margin-top: 50px; /* Tambahkan margin atas agar lebih naik */
+}
+/* Foto Profil */
+.profile-picture {
+    width: 110px; /* Instagram pakai ukuran lebih kecil */
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+.chat-item {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f0f0f0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.chat-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    word-wrap: break-word;
+}
+
+.sent {
+    background: #0095f6;
+    color: white;
+    align-self: flex-end;
+}
+
+.received {
+    background: #efefef;
+    color: black;
+    align-self: flex-start;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    background: #0095f6;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+}
